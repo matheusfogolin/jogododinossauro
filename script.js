@@ -1,6 +1,6 @@
 const dinossauro = document.querySelector('.dinossauro');
 const background = document.querySelector('.background')
-let isJumping = false; // constante criada para não bugar o pulo]
+let isJumping = false; // constante criada para não bugar o pulo
 let position = 0;
 
 function handleKeyDown(event) { // clique do teclado
@@ -8,7 +8,7 @@ function handleKeyDown(event) { // clique do teclado
         if (!isJumping){
             jump();
         }
-        jump();
+        
     }
 }
 
@@ -30,7 +30,7 @@ function jump () { // função para o dinossauro pular
                     dinossauro.style.bottom = position + 'px';                     
 
                  }
-            }, 30)
+            }, 20)
     } else{
         //subindo
         position += 20;
